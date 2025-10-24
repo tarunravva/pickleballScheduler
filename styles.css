@@ -1,0 +1,37 @@
+/* Removed all styling — using browser default styles for a functionality-first UI */
+/* Small spacing between action groups and buttons */
+.controls, .actions {
+  display: flex;
+  gap: 6px;        /* space between buttons */
+  flex-wrap: wrap; /* allow wrapping on narrow screens */
+  align-items: center;
+}
+
+/* Ensure individual buttons have comfortable hit targets */
+button {
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+header.card {
+  background: #000; /* black header background */
+  color: #fff;      /* ensure header text is readable */
+  border: 0;        /* remove light border to keep header crisp */
+}
+
+/* slightly lighter subtext inside header */
+header.card .muted {
+  color: rgba(255,255,255,0.85);
+}
+
+/* keep all sections/cards/panels background light gray and readable text */
+section, .card, .panel, header.card {
+  background: #f3f4f6; /* light gray */
+  color: #111827;      /* dark text for readability */
+  border: 1px solid rgba(15,23,42,0.04);
+}
+
+/* ensure header subtext uses muted color on light background */
+header.card .muted {
+  color: #6b7280;
+}
